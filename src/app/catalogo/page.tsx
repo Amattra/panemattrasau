@@ -1,0 +1,210 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Catalogo 2025 | Panificio a Mattra",
+  description: "Scarica il catalogo 2025 del Panificio a Mattra. Scopri tutti i nostri prodotti, i prezzi e le modalit di ordine.",
+};
+
+const catalogSections = [
+  {
+    title: "Pane Mattrasau",
+    products: [
+      { name: "Mattrasau Classico", weight: "250g", pieces: "1 pz" },
+      { name: "Mattrasau Classico", weight: "500g", pieces: "2 pz" },
+      { name: "Mattrasau Integrale", weight: "250g", pieces: "1 pz" },
+      { name: "Mattrasau ai Cereali", weight: "250g", pieces: "1 pz" },
+      { name: "Mattrasau al Rosmarino", weight: "250g", pieces: "1 pz" },
+    ],
+  },
+  {
+    title: "Confezioni Regalo",
+    products: [
+      { name: "Box Degustazione", weight: "750g", pieces: "3 varianti" },
+      { name: "Box Premium", weight: "1kg", pieces: "4 varianti" },
+      { name: "Cesto Calabrese", weight: "2kg", pieces: "Assortimento" },
+    ],
+  },
+  {
+    title: "Linea Ho.Re.Ca",
+    products: [
+      { name: "Mattrasau Food Service", weight: "1kg", pieces: "Bulk" },
+      { name: "Mini Mattrasau", weight: "500g", pieces: "20 pz" },
+      { name: "Grissini Mattrasau", weight: "300g", pieces: "30 pz" },
+    ],
+  },
+];
+
+export default function Catalogo() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="py-24 bg-cream grain-overlay">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <span className="text-terracotta font-medium tracking-wider uppercase text-sm">Catalogo</span>
+            <h1 className="font-serif text-5xl md:text-6xl font-bold text-brown mt-4 mb-6">
+              Catalogo 2025
+            </h1>
+            <p className="text-brown/70 text-xl leading-relaxed">
+              Scopri la nostra gamma completa di prodotti artigianali.
+              Scarica il catalogo o sfoglialo online.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Download Section */}
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-serif text-4xl font-bold text-brown mb-6">
+                Scarica il catalogo completo
+              </h2>
+              <p className="text-brown/70 text-lg leading-relaxed mb-8">
+                Il nostro catalogo 2025 contiene tutte le informazioni sui nostri prodotti:
+                descrizioni dettagliate, formati disponibili, consigli di utilizzo e molto altro.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="px-8 py-4 bg-terracotta text-cream rounded-full font-semibold text-lg hover:bg-brown transition-colors inline-flex items-center justify-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Scarica PDF
+                </button>
+                <a
+                  href="https://calabriagourmet.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 border-2 border-brown text-brown rounded-full font-semibold text-lg hover:bg-brown hover:text-cream transition-colors inline-flex items-center justify-center gap-2"
+                >
+                  Acquista Online
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="aspect-[3/4] rounded-3xl bg-gradient-to-br from-brown to-brown-light flex items-center justify-center text-cream p-12">
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-cream/10 flex items-center justify-center">
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <h3 className="font-serif text-2xl font-bold mb-2">Catalogo 2025</h3>
+                  <p className="text-cream/70 mb-4">Panificio a Mattra</p>
+                  <p className="text-sm text-cream/50">24 pagine PDF 5MB</p>
+                </div>
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-terracotta/20 -z-10" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Preview */}
+      <section className="py-24 bg-cream">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-terracotta font-medium tracking-wider uppercase text-sm">Anteprima</span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown mt-4">
+              I nostri prodotti
+            </h2>
+          </div>
+
+          <div className="space-y-12">
+            {catalogSections.map((section) => (
+              <div key={section.title} className="bg-white rounded-2xl p-8">
+                <h3 className="font-serif text-2xl font-bold text-brown mb-6">{section.title}</h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="border-b border-brown/10">
+                        <th className="text-left py-3 px-4 font-semibold text-brown">Prodotto</th>
+                        <th className="text-left py-3 px-4 font-semibold text-brown">Peso</th>
+                        <th className="text-left py-3 px-4 font-semibold text-brown">Confezione</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {section.products.map((product, index) => (
+                        <tr key={index} className="border-b border-brown/5 last:border-0">
+                          <td className="py-4 px-4 text-brown">{product.name}</td>
+                          <td className="py-4 px-4 text-brown/70">{product.weight}</td>
+                          <td className="py-4 px-4 text-brown/70">{product.pieces}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ordering Info */}
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-terracotta font-medium tracking-wider uppercase text-sm">Informazioni</span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown mt-4">
+              Come ordinare
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-8">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-terracotta/10 flex items-center justify-center">
+                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-brown mb-3">Online</h3>
+              <p className="text-brown/70 mb-4">
+                Acquista comodamente sul nostro shop online partner Calabria Gourmet.
+              </p>
+              <a href="https://calabriagourmet.com" target="_blank" rel="noopener noreferrer" className="text-terracotta font-semibold hover:underline">
+                Vai allo Shop
+              </a>
+            </div>
+
+            <div className="text-center p-8">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-terracotta/10 flex items-center justify-center">
+                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-brown mb-3">Telefono</h3>
+              <p className="text-brown/70 mb-4">
+                Chiamaci per ordini telefonici o per informazioni sui nostri prodotti.
+              </p>
+              <a href="tel:0985040115" className="text-terracotta font-semibold hover:underline">
+                0985 040115
+              </a>
+            </div>
+
+            <div className="text-center p-8">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-terracotta/10 flex items-center justify-center">
+                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-brown mb-3">In Negozio</h3>
+              <p className="text-brown/70 mb-4">
+                Vieni a trovarci direttamente nel nostro panificio a Santa Domenica Talao.
+              </p>
+              <Link href="/contatti" className="text-terracotta font-semibold hover:underline">
+                Vedi Indirizzo
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
