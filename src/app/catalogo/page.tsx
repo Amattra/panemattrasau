@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -81,17 +82,14 @@ export default function Catalogo() {
             </div>
 
             <div className="relative">
-              <div className="aspect-[3/4] rounded-3xl bg-gradient-to-br from-brown to-brown-light flex items-center justify-center text-cream p-12">
-                <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-cream/10 flex items-center justify-center">
-                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                    </svg>
-                  </div>
-                  <h3 className="font-serif text-2xl font-bold mb-2">Catalogo 2025</h3>
-                  <p className="text-cream/70 mb-4">Panificio a Mattra</p>
-                  <p className="text-sm text-cream/50">PDF 1MB</p>
-                </div>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/catalogo-preview.jpg"
+                  alt="Anteprima Catalogo 2025 Panificio a Mattra"
+                  width={600}
+                  height={800}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-terracotta/20 -z-10" />
             </div>
