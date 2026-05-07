@@ -48,18 +48,18 @@ const mattrasauProducts = [
 
 
 const processSteps = [
-  { label: "Selezione delle farine da grani antichi", image: "/images/slides/slide-1.jpg" },
-  { label: "Preparazione del lievito madre", image: "/images/slides/slide-2.jpg" },
-  { label: "Prima impastatura a mano", image: "/images/slides/slide-3.jpg" },
-  { label: "Riposo dell'impasto (4 ore)", image: "/images/hero/chi-siamo.jpg" },
-  { label: "Seconda impastatura", image: "/images/hero/sfondo.jpg" },
-  { label: "Porzionatura manuale", image: "/images/slides/slide-1.jpg" },
-  { label: "Formatura delle sfoglie", image: "/images/slides/slide-2.jpg" },
-  { label: "Lievitazione naturale (12 ore)", image: "/images/slides/slide-3.jpg" },
-  { label: "Stesura a mano con il matterello", image: "/images/hero/chi-siamo.jpg" },
-  { label: "Prima cottura", image: "/images/hero/sfondo.jpg" },
-  { label: "Separazione delle sfoglie", image: "/images/slides/slide-1.jpg" },
-  { label: "Seconda cottura e doratura", image: "/images/slides/slide-2.jpg" },
+  { label: "Selezione delle farine da grani antichi", image: "/images/process/step-1.jpg" },
+  { label: "Preparazione del lievito madre", image: "/images/process/step-2.jpg" },
+  { label: "Prima impastatura a mano", image: "/images/process/step-3.jpg" },
+  { label: "Riposo dell'impasto (4 ore)", image: "/images/process/step-4.jpg" },
+  { label: "Seconda impastatura", image: "/images/process/step-5.jpg" },
+  { label: "Porzionatura manuale", image: "/images/process/step-6.jpg" },
+  { label: "Formatura delle sfoglie", image: "/images/process/step-7.jpg" },
+  { label: "Lievitazione naturale (12 ore)", image: "/images/process/step-8.jpg" },
+  { label: "Stesura a mano con il matterello", image: "/images/process/step-9.jpg" },
+  { label: "Prima cottura", image: "/images/process/step-10.jpg" },
+  { label: "Separazione delle sfoglie", image: "/images/process/step-11.jpg" },
+  { label: "Seconda cottura e doratura", image: "/images/process/step-12.jpg" },
 ];
 
 const characteristics = [
