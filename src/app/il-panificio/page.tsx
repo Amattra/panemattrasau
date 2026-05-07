@@ -156,6 +156,18 @@ export default function IlPanificio() {
                 </div>
               </div>
             </div>
+            <div className="aspect-video rounded-2xl overflow-hidden">
+              <iframe
+                src="https://maps.google.com/maps?q=Via+Piano+15%2C+87020+Santa+Domenica+Talao+CS%2C+Italy&output=embed&hl=it"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Panificio A Mattra - Via Piano 15, Santa Domenica Talao"
+              />
+            </div>
           </div>
         </div>
       </section>
