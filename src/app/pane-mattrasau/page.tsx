@@ -1,5 +1,4 @@
 import ProductCard from "@/components/ProductCard";
-import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -197,33 +196,6 @@ export default function PaneMattrasau() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 bg-terracotta text-cream">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-            Vuoi assaggiare il nostro pane?
-          </h2>
-          <p className="text-cream/80 text-lg mb-10">
-            Acquista online e ricevi i nostri prodotti direttamente a casa tua.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://calabriagourmet.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-cream text-brown rounded-full font-semibold text-lg hover:bg-brown hover:text-cream transition-colors"
-            >
-              Acquista Online
-            </a>
-            <Link
-              href="/catalogo"
-              className="px-8 py-4 bg-transparent border-2 border-cream text-cream rounded-full font-semibold text-lg hover:bg-cream hover:text-brown transition-colors"
-            >
-              Sfoglia il Catalogo
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

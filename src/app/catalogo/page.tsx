@@ -64,7 +64,7 @@ export default function Catalogo() {
               </h2>
               <p className="text-brown/70 text-lg leading-relaxed mb-8">
                 Il nostro catalogo 2025 contiene tutte le informazioni sui nostri prodotti:
-                descrizioni dettagliate, formati disponibili, consigli di utilizzo e molto altro.
+                descrizioni dettagliate, formati disponibili e molto altro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="px-8 py-4 bg-terracotta text-cream rounded-full font-semibold text-lg hover:bg-brown transition-colors inline-flex items-center justify-center gap-2">
@@ -73,17 +73,6 @@ export default function Catalogo() {
                   </svg>
                   Scarica PDF
                 </button>
-                <a
-                  href="https://calabriagourmet.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 py-4 border-2 border-brown text-brown rounded-full font-semibold text-lg hover:bg-brown hover:text-cream transition-colors inline-flex items-center justify-center gap-2"
-                >
-                  Acquista Online
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
               </div>
             </div>
 
@@ -125,16 +114,12 @@ export default function Catalogo() {
                     <thead>
                       <tr className="border-b border-brown/10">
                         <th className="text-left py-3 px-4 font-semibold text-brown">Prodotto</th>
-                        <th className="text-left py-3 px-4 font-semibold text-brown">Peso</th>
-                        <th className="text-left py-3 px-4 font-semibold text-brown">Confezione</th>
                       </tr>
                     </thead>
                     <tbody>
                       {section.products.map((product, index) => (
                         <tr key={index} className="border-b border-brown/5 last:border-0">
                           <td className="py-4 px-4 text-brown">{product.name}</td>
-                          <td className="py-4 px-4 text-brown/70">{product.weight}</td>
-                          <td className="py-4 px-4 text-brown/70">{product.pieces}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -156,22 +141,7 @@ export default function Catalogo() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-terracotta/10 flex items-center justify-center">
-                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-brown mb-3">Online</h3>
-              <p className="text-brown/70 mb-4">
-                Acquista comodamente sul nostro shop online partner Calabria Gourmet.
-              </p>
-              <a href="https://calabriagourmet.com" target="_blank" rel="noopener noreferrer" className="text-terracotta font-semibold hover:underline">
-                Vai allo Shop
-              </a>
-            </div>
-
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center p-8">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-terracotta/10 flex items-center justify-center">
                 <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">

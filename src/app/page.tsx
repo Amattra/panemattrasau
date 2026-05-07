@@ -12,7 +12,7 @@ const featuredProducts = [
   },
   {
     name: "Mattrasau al Farro",
-    description: "Ricco di fibre e gusto antico. Arricchito con farina di farro, cereale antico dalle eccezionali proprietà nutritive.",
+    description: "Ricco di fibre e gusto antico. Arricchito con farina di farro, cereale dalle eccezionali proprietà nutritive.",
     features: ["Farro biologico", "Ricco di nutrienti", "Sapore rustico"],
     image: "/images/products/farro.jpg",
   },
@@ -79,10 +79,6 @@ export default function Home() {
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-terracotta/10" />
               <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-wheat/30" />
-              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="font-serif text-4xl font-bold text-brown mb-1">40+</div>
-                <p className="text-brown/60 text-sm">Anni di esperienza</p>
-              </div>
             </div>
           </div>
         </div>
@@ -117,15 +113,6 @@ export default function Home() {
               <p className="text-brown/70 text-lg leading-relaxed mb-8">
                 Perfetto per la tavola quotidiana, ideale per la ristorazione moderna.
               </p>
-              <Link
-                href="/pane-mattrasau"
-                className="inline-flex items-center gap-2 text-terracotta font-semibold hover:gap-4 transition-all"
-              >
-                Scopri cosa lo rende unico →
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>

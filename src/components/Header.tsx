@@ -44,14 +44,6 @@ export default function Header() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-terracotta transition-all group-hover:w-full" />
               </Link>
             ))}
-            <a
-              href="https://calabriagourmet.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-4 px-5 py-2.5 bg-terracotta text-cream rounded-full text-sm font-semibold hover:bg-brown transition-colors"
-            >
-              Shop Online
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -87,14 +79,6 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="https://calabriagourmet.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 px-5 py-2.5 bg-terracotta text-cream rounded-full text-sm font-semibold hover:bg-brown transition-colors text-center"
-              >
-                Shop Online
-              </a>
             </div>
           </div>
         )}

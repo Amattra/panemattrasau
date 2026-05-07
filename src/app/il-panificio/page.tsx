@@ -48,7 +48,7 @@ export default function IlPanificio() {
               A Mattra
             </h1>
             <p className="text-brown/70 text-xl leading-relaxed">
-              Dove il pane è cultura, rito e condivisione. Qui la tradizione non è nostalgia: è materia viva.
+              Dove il pane è cultura, rito e condivisione.
             </p>
           </div>
         </div>
@@ -65,9 +65,6 @@ export default function IlPanificio() {
               <div className="space-y-6 text-brown/70 text-lg leading-relaxed">
                 <p>
                   Il Panificio A Mattra nasce a <strong className="text-brown">Santa Domenica di Talao</strong>, piccolo borgo calabrese situato nel Parco Nazionale del Pollino dove il pane è cultura, rito e condivisione.
-                </p>
-                <p className="font-medium text-brown">
-                  Qui la tradizione non è nostalgia: è materia viva.
                 </p>
                 <p>
                   La <strong className="text-brown">Mattra</strong> è la parola che in dialetto locale indica l&apos;antico contenitore in cui si impastava manualmente il pane; nome perfetto per un panificio in cui ogni impasto nasce dalla conoscenza artigianale tramandata nel tempo, ma con uno sguardo sempre rivolto al futuro.
@@ -157,14 +154,6 @@ export default function IlPanificio() {
                   <p className="font-semibold text-lg">Via Piano, 15</p>
                   <p className="text-cream/70">87020 Santa Domenica Talao (CS)</p>
                 </div>
-              </div>
-            </div>
-            <div className="aspect-video rounded-2xl bg-cream/10 flex items-center justify-center">
-              <div className="text-center p-8">
-                <svg className="w-16 h-16 mx-auto text-cream/30 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                </svg>
-                <p className="text-cream/50">Mappa interattiva</p>
               </div>
             </div>
           </div>
