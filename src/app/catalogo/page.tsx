@@ -158,9 +158,9 @@ export default function Catalogo() {
               <p className="text-brown/70 mb-4">
                 Via Nazionale, 80 - 87020 San Nicola Arcella (CS)
               </p>
-              <Link href="/contatti" className="text-terracotta font-semibold hover:underline">
-                Vedi Indirizzo
-              </Link>
+              <a href="tel:3318356820" className="text-terracotta font-semibold hover:underline">
+                331 8356820
+              </a>
             </div>
           </div>
         </div>
