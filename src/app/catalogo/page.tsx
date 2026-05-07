@@ -11,27 +11,10 @@ const catalogSections = [
   {
     title: "Pane Mattrasau",
     products: [
-      { name: "Mattrasau Classico", weight: "250g", pieces: "1 pz" },
-      { name: "Mattrasau Classico", weight: "500g", pieces: "2 pz" },
-      { name: "Mattrasau Integrale", weight: "250g", pieces: "1 pz" },
-      { name: "Mattrasau ai Cereali", weight: "250g", pieces: "1 pz" },
-      { name: "Mattrasau al Rosmarino", weight: "250g", pieces: "1 pz" },
-    ],
-  },
-  {
-    title: "Confezioni Regalo",
-    products: [
-      { name: "Box Degustazione", weight: "750g", pieces: "3 varianti" },
-      { name: "Box Premium", weight: "1kg", pieces: "4 varianti" },
-      { name: "Cesto Calabrese", weight: "2kg", pieces: "Assortimento" },
-    ],
-  },
-  {
-    title: "Linea Ho.Re.Ca",
-    products: [
-      { name: "Mattrasau Food Service", weight: "1kg", pieces: "Bulk" },
-      { name: "Mini Mattrasau", weight: "500g", pieces: "20 pz" },
-      { name: "Grissini Mattrasau", weight: "300g", pieces: "30 pz" },
+      { name: "Mattrasau Classico", weight: "300g" },
+      { name: "Mattrasau Integrale", weight: "300g" },
+      { name: "Mattrasau ai Cereali", weight: "300g" },
+      { name: "Mattrasau al Rosmarino", weight: "300g" },
     ],
   },
 ];
@@ -116,12 +99,14 @@ export default function Catalogo() {
                     <thead>
                       <tr className="border-b border-brown/10">
                         <th className="text-left py-3 px-4 font-semibold text-brown">Prodotto</th>
+                        <th className="text-left py-3 px-4 font-semibold text-brown">Peso</th>
                       </tr>
                     </thead>
                     <tbody>
                       {section.products.map((product, index) => (
                         <tr key={index} className="border-b border-brown/5 last:border-0">
                           <td className="py-4 px-4 text-brown">{product.name}</td>
+                          <td className="py-4 px-4 text-brown/70">{product.weight}</td>
                         </tr>
                       ))}
                     </tbody>
