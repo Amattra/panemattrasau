@@ -113,6 +113,12 @@ export default function Home() {
               <p className="text-brown/70 text-lg leading-relaxed mb-8">
                 Perfetto per la tavola quotidiana, ideale per la ristorazione moderna.
               </p>
+              <Link
+                href="/pane-mattrasau"
+                className="inline-flex items-center gap-2 text-terracotta font-semibold hover:gap-4 transition-all"
+              >
+                Scopri cosa lo rende unico →
+              </Link>
             </div>
           </div>
         </div>
