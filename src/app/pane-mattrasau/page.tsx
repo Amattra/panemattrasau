@@ -1,5 +1,6 @@
 import ProductCard from "@/components/ProductCard";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Pane Mattrasau | A Mattra",
@@ -47,18 +48,18 @@ const mattrasauProducts = [
 
 
 const processSteps = [
-  "Selezione delle farine da grani antichi",
-  "Preparazione del lievito madre",
-  "Prima impastatura a mano",
-  "Riposo dell'impasto (4 ore)",
-  "Seconda impastatura",
-  "Porzionatura manuale",
-  "Formatura delle sfoglie",
-  "Lievitazione naturale (12 ore)",
-  "Stesura a mano con il matterello",
-  "Prima cottura",
-  "Separazione delle sfoglie",
-  "Seconda cottura e doratura",
+  { label: "Selezione delle farine da grani antichi", image: "/images/slides/slide-1.jpg" },
+  { label: "Preparazione del lievito madre", image: "/images/slides/slide-2.jpg" },
+  { label: "Prima impastatura a mano", image: "/images/slides/slide-3.jpg" },
+  { label: "Riposo dell'impasto (4 ore)", image: "/images/hero/chi-siamo.jpg" },
+  { label: "Seconda impastatura", image: "/images/hero/sfondo.jpg" },
+  { label: "Porzionatura manuale", image: "/images/slides/slide-1.jpg" },
+  { label: "Formatura delle sfoglie", image: "/images/slides/slide-2.jpg" },
+  { label: "Lievitazione naturale (12 ore)", image: "/images/slides/slide-3.jpg" },
+  { label: "Stesura a mano con il matterello", image: "/images/hero/chi-siamo.jpg" },
+  { label: "Prima cottura", image: "/images/hero/sfondo.jpg" },
+  { label: "Separazione delle sfoglie", image: "/images/slides/slide-1.jpg" },
+  { label: "Seconda cottura e doratura", image: "/images/slides/slide-2.jpg" },
 ];
 
 const characteristics = [
@@ -185,11 +186,21 @@ export default function PaneMattrasau() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {processSteps.map((step, index) => (
-              <div key={index} className="flex items-center gap-4 bg-white rounded-xl p-4">
-                <div className="w-10 h-10 shrink-0 rounded-full bg-terracotta text-cream flex items-center justify-center font-serif font-bold">
-                  {index + 1}
+              <div key={index} className="bg-white rounded-xl overflow-hidden">
+                <div className="relative h-32 w-full">
+                  <Image
+                    src={step.image}
+                    alt={step.label}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-2 left-2 w-8 h-8 rounded-full bg-terracotta text-cream flex items-center justify-center font-serif font-bold text-sm">
+                    {index + 1}
+                  </div>
                 </div>
-                <p className="text-brown text-sm font-medium">{step}</p>
+                <div className="p-3">
+                  <p className="text-brown text-sm font-medium">{step.label}</p>
+                </div>
               </div>
             ))}
           </div>
