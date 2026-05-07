@@ -153,7 +153,10 @@ export default function Catalogo() {
               </div>
               <h3 className="font-serif text-xl font-semibold text-brown mb-3">In Negozio</h3>
               <p className="text-brown/70 mb-4">
-                Vieni a trovarci direttamente nel nostro panificio a Santa Domenica Talao.
+                Scopri i nostri prodotti nel nostro pop-up store San Nicola Arcella aperto da MAGGIO a SETTEMBRE.
+              </p>
+              <p className="text-brown/70 mb-4">
+                Via Nazionale, 80 - 87020 San Nicola Arcella (CS)
               </p>
               <Link href="/contatti" className="text-terracotta font-semibold hover:underline">
                 Vedi Indirizzo
