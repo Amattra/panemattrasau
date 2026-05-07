@@ -30,6 +30,12 @@ export default function Hero() {
       </svg>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 text-center">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brown/10 text-brown text-sm font-medium mb-8 animate-fade-in-up">
+          <span className="w-2 h-2 rounded-full bg-terracotta animate-pulse" />
+          a Santa Domenica Talao
+        </div>
+
         {/* Main Heading */}
         <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-brown mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           Pane Mattrasau
