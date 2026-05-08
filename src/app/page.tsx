@@ -70,8 +70,8 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/slides/slide-1.jpg"
-                  alt="Pane Mattrasau artigianale"
+                  src="/images/nostro-mondo.png"
+                  alt="Panificio A Mattra - Il nostro mondo"
                   width={600}
                   height={600}
                   className="w-full h-full object-cover"
