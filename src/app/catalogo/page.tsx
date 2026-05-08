@@ -2,8 +2,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Catalogo 2025 | Panificio a Mattra",
-  description: "Scarica il catalogo 2025 del Panificio a Mattra. Scopri tutti i nostri prodotti, i prezzi e le modalit di ordine.",
+  title: "Catalogo 2026 | Panificio a Mattra",
+  description: "Scarica il catalogo 2026 del Panificio a Mattra. Scopri tutti i nostri prodotti, i prezzi e le modalità di ordine.",
 };
 
 const catalogSections = [
@@ -27,7 +27,7 @@ export default function Catalogo() {
           <div className="max-w-3xl">
             <span className="text-terracotta font-medium tracking-wider uppercase text-sm">Catalogo</span>
             <h1 className="font-serif text-5xl md:text-6xl font-bold text-brown mt-4 mb-6">
-              Catalogo 2025
+              Catalogo 2026
             </h1>
             <p className="text-brown/70 text-xl leading-relaxed">
               Scopri la nostra gamma completa di prodotti artigianali.
@@ -46,13 +46,13 @@ export default function Catalogo() {
                 Scarica il catalogo completo
               </h2>
               <p className="text-brown/70 text-lg leading-relaxed mb-8">
-                Il nostro catalogo 2025 contiene tutte le informazioni sui nostri prodotti:
+                Il nostro catalogo 2026 contiene tutte le informazioni sui nostri prodotti:
                 descrizioni dettagliate, formati disponibili e molto altro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="/catalogo-2025.pdf"
-                  download="Catalogo-Mattra-2025.pdf"
+                  href="/catalogo-2026.pdf"
+                  download="Catalogo-Mattra-2026.pdf"
                   className="px-8 py-4 bg-terracotta text-cream rounded-full font-semibold text-lg hover:bg-brown transition-colors inline-flex items-center justify-center gap-2"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,7 +67,7 @@ export default function Catalogo() {
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-xl">
                 <Image
                   src="/images/catalogo-preview.jpg"
-                  alt="Anteprima Catalogo 2025 Panificio a Mattra"
+                  alt="Anteprima Catalogo 2026 Panificio a Mattra"
                   width={600}
                   height={800}
                   className="w-full h-full object-cover"
