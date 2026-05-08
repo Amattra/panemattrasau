@@ -182,7 +182,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/slides/slide-3.jpg"
+                  src="/images/filosofia.jpg"
                   alt="Produzione artigianale"
                   width={600}
                   height={600}
