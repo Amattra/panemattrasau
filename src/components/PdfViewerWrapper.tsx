@@ -1,13 +1,6 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
-const PdfViewer = dynamic(() => import("./PdfViewer"), {
-  ssr: false,
-  loading: () => (
-    <div className="w-[340px] h-[480px] bg-cream animate-pulse rounded-2xl" />
-  ),
-});
+import PdfViewer from "./PdfViewer";
 
 export default function PdfViewerWrapper({ url }: { url: string }) {
   return <PdfViewer url={url} />;
