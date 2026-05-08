@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import PdfViewerWrapper from "@/components/PdfViewerWrapper";
 
 export const metadata: Metadata = {
   title: "Catalogo 2026 | Panificio a Mattra",
@@ -63,17 +63,8 @@ export default function Catalogo() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-xl">
-                <Image
-                  src="/images/catalogo-preview.jpg"
-                  alt="Anteprima Catalogo 2026 Panificio a Mattra"
-                  width={600}
-                  height={800}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-terracotta/20 -z-10" />
+            <div className="flex justify-center">
+              <PdfViewerWrapper url="/catalogo-2026.pdf" />
             </div>
           </div>
         </div>
