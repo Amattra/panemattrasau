@@ -22,7 +22,7 @@ const mattrasauProducts = [
   {
     name: "Mattrasau al Farro",
     description: "Arricchito con farina di farro, cereale antico dalle eccezionali propriet nutritive.",
-    features: ["Farro biologico", "Ricco di nutrienti", "Sapore rustico"],
+    features: ["Farro", "Ricco di nutrienti", "Sapore rustico"],
     image: "/images/products/farro.jpg",
   },
   {
