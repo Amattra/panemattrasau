@@ -49,15 +49,6 @@ const contactInfo = [
   },
 ];
 
-const openingHours = [
-  { day: "Luned", hours: "08:00 - 13:00 / 16:00 - 20:00" },
-  { day: "Marted", hours: "08:00 - 13:00 / 16:00 - 20:00" },
-  { day: "Mercoled", hours: "08:00 - 13:00 / 16:00 - 20:00" },
-  { day: "Gioved", hours: "08:00 - 13:00 / 16:00 - 20:00" },
-  { day: "Venerd", hours: "08:00 - 13:00 / 16:00 - 20:00" },
-  { day: "Sabato", hours: "08:00 - 13:00" },
-  { day: "Domenica", hours: "Chiuso" },
-];
 
 export default function Contatti() {
   return (
@@ -113,20 +104,6 @@ export default function Contatti() {
                 ))}
               </div>
 
-              {/* Opening Hours */}
-              <div className="bg-cream rounded-2xl p-8">
-                <h3 className="font-serif text-xl font-semibold text-brown mb-6">Orari di Apertura</h3>
-                <ul className="space-y-3">
-                  {openingHours.map((item) => (
-                    <li key={item.day} className="flex justify-between text-sm">
-                      <span className="font-medium text-brown">{item.day}</span>
-                      <span className={item.hours === "Chiuso" ? "text-terracotta" : "text-brown/70"}>
-                        {item.hours}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
 
             {/* Contact Form */}
