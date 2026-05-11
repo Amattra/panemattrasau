@@ -56,7 +56,7 @@ const processSteps = [
   { label: "Porzionatura manuale", image: "/images/process/step-6.jpg" },
   { label: "Formatura delle sfoglie", image: "/images/process/step-7.jpg" },
   { label: "Lievitazione naturale (12 ore)", image: "/images/process/step-8.jpg" },
-  { label: "Stesura a mano con il matterello", image: "/images/process/step-9.jpg" },
+  { label: "Stesura a mano", image: "/images/process/step-9.jpg" },
   { label: "Prima cottura", image: "/images/process/step-10.jpg" },
   { label: "Separazione delle sfoglie", image: "/images/process/step-11.jpg" },
   { label: "Seconda cottura e doratura", image: "/images/process/step-12.jpg" },

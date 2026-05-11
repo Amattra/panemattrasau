@@ -10,10 +10,12 @@ const catalogSections = [
   {
     title: "Pane Mattrasau",
     products: [
-      { name: "Mattrasau Classico", weight: "300g" },
-      { name: "Mattrasau Integrale", weight: "300g" },
+      { name: "Pane Mattrasau Classico", weight: "300g" },
+      { name: "Mattrasau alla Curcuma", weight: "300g" },
+      { name: "Mattrasau al Mais", weight: "300g" },
+      { name: "Mattrasau al Farro", weight: "300g" },
+      { name: "Mattrasau alla Soia", weight: "300g" },
       { name: "Mattrasau ai Cereali", weight: "300g" },
-      { name: "Mattrasau al Rosmarino", weight: "300g" },
     ],
   },
 ];
